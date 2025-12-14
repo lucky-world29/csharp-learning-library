@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebForms_Practice.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    
+       <form id="form1" runat="server">
+    <div>
+
+        <div id="divHeader" style="background-color: lightpink; color: aqua; text-align: center; font-size: xx-large">
+            Naresh I Technologies
+        </div>
+
+        <div id="divMenu" style="background-color: beige; text-align: center">
+            <asp:HyperLink ID="hlHome" runat="server" NavigateUrl="~/Home.aspx" Text="Home" />&nbsp;
+            <asp:HyperLink ID="hlMission" runat="server" NavigateUrl="~/Mission.aspx" Text="Mission" />&nbsp;
+            <asp:HyperLink ID="hlAbout" runat="server" NavigateUrl="~/About.aspx" Text="About" />
+        </div>
+
+        <div id="divContent">
+            <asp:ContentPlaceHolder ID="body" runat="server"></asp:ContentPlaceHolder>
+        </div>
+
+        <div id="divFooter" style="background-color: azure">
+            <fieldset style="border: dotted blue; color: brown">
+                <legend>Contact Us</legend>
+                Address: Opp. Satyam Theatre, Ameerpet, Hyderabad – 16
+                <br />
+                Phone: 2374
+                <br />
+                Email: info@nareshit.com
+                <br />
+                Website: www.nareshit.com
+            </fieldset>
+        </div>
+
+    </div>
+</form>
+
+</body>
+</html>
